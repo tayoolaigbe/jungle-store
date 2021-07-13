@@ -3,6 +3,7 @@ const { mainCards, animals, categories } = require('./db');
 const typeDefs = require('./schema.js');
 const Query = require('./resolvers/Query');
 const Category = require('./resolvers/Category');
+const Mutation = require('./resolvers/Mutation');
 const Animal = require('./resolvers/Animal');
 
 // The ApolloServer constructor requires two parameters: your schema
@@ -13,6 +14,7 @@ const server = new ApolloServer({
 		Query,
 		Animal,
 		Category,
+		Mutation,
 	},
 	context: {
 		mainCards,
