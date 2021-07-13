@@ -58,8 +58,8 @@ function AnimalPage() {
 						</div>
 						<div className="about-container">
 							<h4>About this Animal</h4>
-							{data.animal.description.map(description => (
-								<li>{description}</li>
+							{data.animal.description.map((description, index) => (
+								<li key={index}>{description}</li>
 							))}
 						</div>
 					</div>

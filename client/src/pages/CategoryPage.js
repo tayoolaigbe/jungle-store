@@ -8,10 +8,14 @@ const FETCH_CATEGORIES = gql`
 	query ($slug: String!) {
 		category(slug: $slug) {
 			category
+			id
+			slug
 			animals {
+				id
 				slug
 				title
 				image
+				price
 			}
 		}
 	}
@@ -30,14 +34,14 @@ function CategoryPage() {
 
 	if (error) return <div>Something went wrong...</div>;
 
-	console.log(data);
+	// console.log(data);
 
 	return (
 		<div className="py-5">
 			<Container>
 				<h1 className="text-capitalize">
-					{}
-					<CardDisplay animals={[]} />
+					{data.category.category}
+					<CardDisplay animals={data.category.animals} />
 				</h1>
 			</Container>
 		</div>

@@ -22,7 +22,7 @@ function LandingPage() {
 	if (loading) return <div>Loading...</div>;
 
 	if (error) return <div>Something went wrong...</div>;
-	console.log(data);
+	// console.log(data);
 
 	return (
 		<div>
