@@ -103,14 +103,14 @@ const animals = [
 	{
 		id: '6',
 		image: 'kang',
-		title:
-			'Large Kangaroo with Muscular Leg and Tail and Pointly Teeth and Ears',
+		title: 'Large Kangaroo with Muscular Leg, Tail and Pointly Teeth and Ears',
 		price: '42,453',
 		description: [
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
 			'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
 			'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
 			'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+			'Moriganu nim id est laborum.',
 		],
 		stock: 14,
 		onSale: false,

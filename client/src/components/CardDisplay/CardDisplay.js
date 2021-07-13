@@ -1,18 +1,17 @@
-import React from 'react'
-import Card from '../Card/Card'
-import {Container} from "react-bootstrap"
+import React from 'react';
+import Card from '../Card/Card';
+import { Container } from 'react-bootstrap';
 
-function CardDisplay({animals}) {
-
-    return (
-        <div className="card-display">
-            <Container className="card-display-container">
-                {animals.map(animal => {
-                    return <Card animal={animal} />
-                })}
-            </Container>
-        </div>
-    )
+function CardDisplay({ animals }) {
+	return (
+		<div className="card-display">
+			<Container className="card-display-container">
+				{animals.map((animal, index) => {
+					return <Card animal={animal} key={index} />;
+				})}
+			</Container>
+		</div>
+	);
 }
 
-export default CardDisplay
+export default CardDisplay;

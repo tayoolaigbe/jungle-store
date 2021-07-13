@@ -13,7 +13,7 @@ function MainHero() {
 			}
 		}
 	`);
-	console.log(data);
+	// console.log(data);
 
 	if (loading) return <div>Loading...</div>;
 
@@ -26,7 +26,7 @@ function MainHero() {
 					<h2>
 						Find your <br /> new four-legged <br /> best friend
 					</h2>
-					<img src={animals.rhino} />
+					<img src={animals.rhino} alt="" />
 				</div>
 				<div className="cards-container">
 					{data.mainCards.map(card => {
